@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Compass · 职业指南针</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@500;600;700&family=Press+Start+2P&family=ZCOOL+KuaiLe&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <!-- Pixel landscape background -->
+    <div class="pixel-bg" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="xMidYMax slice">
+        <!-- Layer 1: Sky -->
+        <rect x="0" y="0" width="1440" height="320" fill="#bfdbfe"/>
+        <!-- Cloud 1: small, left 1/4 (~x=208) -->
+        <rect x="244" y="36" width="12" height="8"  fill="#e0f2fe"/>
+        <rect x="232" y="40" width="20" height="12" fill="#ffffff"/>
+        <rect x="216" y="44" width="52" height="12" fill="#ffffff"/>
+        <rect x="208" y="52" width="68" height="8"  fill="#ffffff"/>
+        <rect x="220" y="56" width="44" height="4"  fill="#e0f2fe"/>
+        <!-- Cloud 2: medium, center-right (~x=800) -->
+        <rect x="812" y="28" width="16" height="8"  fill="#e0f2fe"/>
+        <rect x="800" y="32" width="36" height="16" fill="#e0f2fe"/>
+        <rect x="776" y="40" width="76" height="20" fill="#ffffff"/>
+        <rect x="764" y="52" width="100" height="12" fill="#ffffff"/>
+        <rect x="772" y="60" width="84" height="4"  fill="#e0f2fe"/>
+        <!-- Cloud 3: large, right 3/4 (~x=1100) -->
+        <rect x="1116" y="24" width="24" height="8"  fill="#e0f2fe"/>
+        <rect x="1104" y="28" width="52" height="16" fill="#e0f2fe"/>
+        <rect x="1152" y="36" width="32" height="12" fill="#e0f2fe"/>
+        <rect x="1080" y="36" width="116" height="20" fill="#ffffff"/>
+        <rect x="1068" y="52" width="140" height="12" fill="#ffffff"/>
+        <rect x="1076" y="60" width="124" height="4"  fill="#e0f2fe"/>
+        <!-- Layer 2: Mountains (far to near) -->
+        <polygon points="0,320 0,256 80,244 160,260 240,240 320,256 400,236 480,252 560,240 640,260 720,244 800,260 880,236 960,256 1040,240 1120,260 1200,248 1280,256 1360,244 1440,256 1440,320" fill="#6ee7b7"/>
+        <polygon points="0,320 0,240 100,212 200,236 300,204 400,228 500,200 600,220 700,204 800,228 900,200 1000,224 1100,204 1200,228 1300,208 1400,228 1440,224 1440,320" fill="#22c55e"/>
+        <polygon points="0,320 0,228 120,180 240,212 360,168 480,196 600,164 720,192 840,168 960,192 1080,168 1200,196 1320,172 1440,196 1440,320" fill="#15803d"/>
+        <!-- Layer 3: Ground & Road -->
+        <rect x="0" y="220" width="1440" height="100" fill="#86efac"/>
+        <polygon points="0,320 60,320 908,220 892,220" fill="#78716c"/>
+        <polygon points="0,320 8,320 900,220 892,220"  fill="#57534e"/>
+        <polygon points="52,320 60,320 908,220 900,220" fill="#57534e"/>
+        <!-- Road center dashes -->
+        <rect x="112" y="308" width="8" height="4" fill="#ffffff"/>
+        <rect x="200" y="300" width="8" height="4" fill="#ffffff"/>
+        <rect x="288" y="288" width="8" height="4" fill="#ffffff"/>
+        <rect x="372" y="280" width="8" height="4" fill="#ffffff"/>
+        <rect x="460" y="268" width="8" height="4" fill="#ffffff"/>
+        <rect x="548" y="260" width="4" height="4" fill="#ffffff"/>
+        <rect x="636" y="248" width="4" height="4" fill="#ffffff"/>
+        <rect x="724" y="240" width="4" height="4" fill="#ffffff"/>
+        <rect x="812" y="228" width="4" height="4" fill="#ffffff"/>
+        <!-- Trees -->
+        <rect x="80"   y="172" width="44" height="40" fill="#166534"/>
+        <rect x="92"   y="212" width="16" height="8"  fill="#92400e"/>
+        <rect x="304"  y="180" width="36" height="36" fill="#166534"/>
+        <rect x="312"  y="216" width="16" height="4"  fill="#92400e"/>
+        <rect x="500"  y="168" width="48" height="44" fill="#166534"/>
+        <rect x="512"  y="212" width="16" height="8"  fill="#92400e"/>
+        <rect x="724"  y="184" width="32" height="32" fill="#166534"/>
+        <rect x="732"  y="216" width="12" height="4"  fill="#92400e"/>
+        <rect x="944"  y="172" width="40" height="40" fill="#166534"/>
+        <rect x="952"  y="212" width="16" height="8"  fill="#92400e"/>
+        <rect x="1164" y="180" width="36" height="36" fill="#166534"/>
+        <rect x="1172" y="216" width="12" height="4"  fill="#92400e"/>
+        <rect x="1348" y="188" width="28" height="28" fill="#166534"/>
+        <rect x="1356" y="216" width="8"  height="4"  fill="#92400e"/>
+        <!-- Layer 4: Foreground decorations -->
+        <rect x="400" y="256" width="4" height="20" fill="#57534e"/>
+        <rect x="388" y="244" width="28" height="16" fill="#f97316"/>
+        <rect x="1100" y="212" width="4"  height="8"  fill="#57534e"/>
+        <rect x="1088" y="196" width="28" height="16" fill="#ca8a04"/>
+        <rect x="332" y="288" width="4"  height="16" fill="#57534e"/>
+        <rect x="320" y="276" width="24" height="12" fill="#f97316"/>
+        <!-- Flowers -->
+        <rect x="88"   y="216" width="4" height="4" fill="#fbbf24"/>
+        <rect x="164"  y="216" width="4" height="4" fill="#fbbf24"/>
+        <rect x="456"  y="212" width="4" height="4" fill="#fbbf24"/>
+        <rect x="680"  y="216" width="4" height="4" fill="#fbbf24"/>
+        <rect x="1040" y="216" width="4" height="4" fill="#fbbf24"/>
+        <rect x="1200" y="216" width="4" height="4" fill="#fbbf24"/>
+        <rect x="1380" y="216" width="4" height="4" fill="#fbbf24"/>
+      </svg>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
